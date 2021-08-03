@@ -82,8 +82,6 @@ box4.addEventListener("click", () => {
 });
 
 home.addEventListener("click", () => {
-
-    console.log(state.selectedBoxOrder)
     state.selectedBoxOrder.forEach((box, index) => {
         box.classList.remove('hide');
         box.style.animationName = `rotateClose${index + 1}`;
