@@ -1,0 +1,200 @@
+html, body, .page {
+    height: 100%;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.box {
+    width: 100%;
+    height: 150%
+}
+
+#box1 {
+    position:absolute;
+    background: rgb(89, 160, 184);
+    top: -100%;
+    left: -50%;
+    transform-origin: bottom right;
+  }
+
+  #box2 {
+    position:absolute;
+    background: rgb(223, 92, 87);
+    top: -100%;
+    left: 50%;
+    transform-origin: bottom left;
+  }
+
+  #box3 {
+    position:absolute;
+    background: rgb(223, 203, 87);
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+  }
+
+  #box4 {
+    position:absolute;
+    background: rgb(112, 182, 84);
+    top: 50%;
+    left: -50%;
+    transform-origin: top right;
+  }
+
+  .home { 
+    background: white;
+    border-radius: 75px;
+    height: 150px;
+    width: 150px;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+  
+  .rotate1 {
+    animation-duration: .5s;
+    animation-name: rotateOpen1;
+    z-index: 2;
+  }
+
+  @keyframes rotateOpen1 {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(0deg);
+    }
+  }
+
+  @keyframes rotateClose1 {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(0deg);
+    }
+  }
+
+  .rotate2 {
+    animation-duration: .5s;
+    animation-name: rotateOpen2;
+    z-index: 1;
+  }
+
+  @keyframes rotateOpen2 {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(270deg);
+    }
+  }
+
+  @keyframes rotateClose2 {
+    from {
+        transform: rotate(270deg);
+    }
+  
+    to {
+        transform: rotate(0deg);
+    }
+  }
+
+  .rotate3 {
+    animation-duration: .5s;
+    animation-name: rotateOpen3;
+    z-index: 1;
+  }
+
+  @keyframes rotateOpen3 {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(180deg);
+    }
+  }
+
+  @keyframes rotateClose3 {
+    from {
+        transform: rotate(180deg);
+    }
+  
+    to {
+        transform: rotate(0deg);
+    }
+  }
+
+  .rotate4 {
+    animation-duration: .5s;
+    animation-name: rotateOpen4;
+    z-index: 1;
+  }
+
+  @keyframes rotateOpen4 {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(90deg);
+    }
+  }
+
+  @keyframes rotateClose4 {
+    from {
+        transform: rotate(90deg);
+    }
+  
+    to {
+        transform: rotate(0deg);
+    }
+  }
+
+  .reverse_rotate1 {
+    transform: rotate(0deg) !important;
+  }
+
+  .reverse_rotate2 {
+    transform: rotate(20deg) !important;
+  }
+
+  .reverse_rotate3 {
+    transform: rotate(30deg) !important;
+  }
+
+  .reverse_rotate4 {
+    transform: rotate(40deg) !important;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #page1 {
+    background:rgb(89, 160, 184);
+  }
+
+  #page2 {
+    background: rgb(223, 92, 87);
+  }
+
+  #page3 {
+    background: rgb(223, 203, 87);
+  }
+
+  #page4 {
+    background: rgb(112, 182, 84); 
+  }
+  
+  button {
+    display: block;
+    margin: auto;
+  }
